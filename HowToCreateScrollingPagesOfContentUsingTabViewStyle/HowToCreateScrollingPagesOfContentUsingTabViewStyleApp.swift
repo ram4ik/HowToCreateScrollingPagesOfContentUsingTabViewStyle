@@ -11,7 +11,13 @@ import SwiftUI
 struct HowToCreateScrollingPagesOfContentUsingTabViewStyleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                ContentView()
+                ContentView()
+                ContentView()
+            }.tabViewStyle(PageTabViewStyle())
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
         }
     }
 }
