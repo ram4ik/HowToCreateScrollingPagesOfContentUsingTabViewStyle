@@ -12,11 +12,12 @@ struct HowToCreateScrollingPagesOfContentUsingTabViewStyleApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                ContentView()
-                ContentView()
-                ContentView()
-                ContentView()
-            }.tabViewStyle(PageTabViewStyle())
+                Neuschwanstein()
+                MontSaintMichel()
+                Bled()
+                Castle()
+            }
+            .tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
         }
     }
